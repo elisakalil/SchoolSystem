@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SistemaEscola" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TEy-oO-qQy">
+                                <rect key="frame" x="16" y="44" width="382" height="269"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensagem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ss-eD-GU9">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="23"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Mensagem Console" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qby-fC-4GH">
+                                        <rect key="frame" x="0.0" y="31" width="382" height="238"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ações do Sistema" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKt-tK-w6Z">
+                                <rect key="frame" x="16" y="321" width="382" height="26.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26.5" id="K7K-BP-dxa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yMR-to-MsD">
+                                <rect key="frame" x="16" y="355.5" width="382" height="160"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Matrícula" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FNe-IZ-Dxx">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="hhm-c8-9sb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gbt-MX-8Ew">
+                                        <rect key="frame" x="0.0" y="42" width="382" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="fga-xq-SJ6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Salário" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8j-7M-1MM">
+                                        <rect key="frame" x="0.0" y="84" width="382" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="PTY-An-DZL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MRE-No-rTA">
+                                        <rect key="frame" x="0.0" y="126" width="382" height="34"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufs-AL-bbJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="34"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Mntr">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="selecionaMonitor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mjq-b7-PAo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zx9-QQ-zaA">
+                                                <rect key="frame" x="78" y="0.0" width="70" height="34"/>
+                                                <state key="normal" title="Prof"/>
+                                                <connections>
+                                                    <action selector="selecionaProfessor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0X7-mR-yDK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuN-XH-mp8">
+                                                <rect key="frame" x="156" y="0.0" width="70" height="34"/>
+                                                <state key="normal" title="Coord"/>
+                                                <connections>
+                                                    <action selector="selecionaCoordenador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DRw-ck-QJT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogP-Kf-MKS">
+                                                <rect key="frame" x="234" y="0.0" width="70" height="34"/>
+                                                <state key="normal" title="Dir"/>
+                                                <connections>
+                                                    <action selector="selecionaDiretor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJe-w0-fxq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlH-0m-D2P">
+                                                <rect key="frame" x="312" y="0.0" width="70" height="34"/>
+                                                <state key="normal" title="Asst"/>
+                                                <connections>
+                                                    <action selector="selecionaAssistente:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SyM-Um-Xk6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVO-Ck-5uD">
+                                <rect key="frame" x="16" y="523.5" width="382" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Mms-d0-mRc"/>
+                                </constraints>
+                                <state key="normal" title="Cadastrar Colaborador">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cadastrarColaborador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNa-VK-lIw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Matrícula" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I6Q-MW-SkG">
+                                <rect key="frame" x="16" y="584.5" width="382" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="6QN-hh-CCI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqf-RC-RGf">
+                                <rect key="frame" x="16" y="626.5" width="382" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Cz0-el-s7e"/>
+                                </constraints>
+                                <state key="normal" title="Remover Colaborador">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="removerColaborador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OFW-8z-14J"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ffC-De-Rox">
+                                <rect key="frame" x="16" y="687.5" width="382" height="158.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6S-0F-YhP">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="33.5"/>
+                                        <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                        <state key="normal" title="Listar gastos mensais com todos colaboradores"/>
+                                        <connections>
+                                            <action selector="listarGastosMensaisComTodosColaboradores:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hy6-P0-YRV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUq-W7-fNw">
+                                        <rect key="frame" x="0.0" y="41.5" width="382" height="33.5"/>
+                                        <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                        <state key="normal" title="Listar gastos mensais por cargo"/>
+                                        <connections>
+                                            <action selector="listarGastosMensaisPorCargo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wIM-fK-YZP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7I-oJ-8ex">
+                                        <rect key="frame" x="0.0" y="83" width="382" height="34"/>
+                                        <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                        <state key="normal" title="Listar quantas pessoas existem por cargo"/>
+                                        <connections>
+                                            <action selector="listarQuantasPessoasExistemPorCargo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iNc-ec-6E1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqm-jY-inb">
+                                        <rect key="frame" x="0.0" y="125" width="382" height="33.5"/>
+                                        <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                        <state key="normal" title="Listar nomes colaboradores ordem alfabética"/>
+                                        <connections>
+                                            <action selector="listarNomesColaboradoresOrdemAlfabetica:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ia-CR-6In"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ffC-De-Rox" secondAttribute="bottom" constant="16" id="0lS-U8-83D"/>
+                            <constraint firstItem="I6Q-MW-SkG" firstAttribute="top" secondItem="vVO-Ck-5uD" secondAttribute="bottom" constant="16" id="1co-Ki-CB3"/>
+                            <constraint firstItem="yMR-to-MsD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8nY-oY-fsG"/>
+                            <constraint firstItem="TEy-oO-qQy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9lF-ws-Gbe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ffC-De-Rox" secondAttribute="trailing" constant="16" id="CbD-Ml-9ig"/>
+                            <constraint firstItem="TEy-oO-qQy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Cdi-kY-XFr"/>
+                            <constraint firstItem="Iqf-RC-RGf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DSi-mp-qDX"/>
+                            <constraint firstItem="yMR-to-MsD" firstAttribute="top" secondItem="AKt-tK-w6Z" secondAttribute="bottom" constant="8" id="GTQ-Ll-h1j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TEy-oO-qQy" secondAttribute="trailing" constant="16" id="Mrr-Sw-6ua"/>
+                            <constraint firstItem="Iqf-RC-RGf" firstAttribute="top" secondItem="I6Q-MW-SkG" secondAttribute="bottom" constant="8" id="NiB-QR-Weh"/>
+                            <constraint firstItem="ffC-De-Rox" firstAttribute="top" secondItem="Iqf-RC-RGf" secondAttribute="bottom" constant="16" id="RCI-C1-KsO"/>
+                            <constraint firstItem="ffC-De-Rox" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ta7-xJ-j8b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iqf-RC-RGf" secondAttribute="trailing" constant="16" id="YK5-fn-ag1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I6Q-MW-SkG" secondAttribute="trailing" constant="16" id="aWv-pD-0ho"/>
+                            <constraint firstItem="AKt-tK-w6Z" firstAttribute="top" secondItem="TEy-oO-qQy" secondAttribute="bottom" constant="8" id="acW-vh-07j"/>
+                            <constraint firstItem="TEy-oO-qQy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="gYf-0T-5Re"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vVO-Ck-5uD" secondAttribute="trailing" constant="16" id="lZU-mT-syY"/>
+                            <constraint firstItem="vVO-Ck-5uD" firstAttribute="top" secondItem="yMR-to-MsD" secondAttribute="bottom" constant="8" id="mJw-Iz-58D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AKt-tK-w6Z" secondAttribute="trailing" constant="16" id="pSG-7d-9qR"/>
+                            <constraint firstItem="AKt-tK-w6Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sFa-zk-s2y"/>
+                            <constraint firstAttribute="trailing" secondItem="yMR-to-MsD" secondAttribute="trailing" constant="16" id="t98-11-3eP"/>
+                            <constraint firstItem="vVO-Ck-5uD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uWC-RX-kVW"/>
+                            <constraint firstItem="I6Q-MW-SkG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="von-Vd-EhR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="assistenteButton" destination="MlH-0m-D2P" id="O7U-45-8LK"/>
+                        <outlet property="coordenadorButton" destination="FuN-XH-mp8" id="zH1-jd-O8q"/>
+                        <outlet property="diretorButton" destination="ogP-Kf-MKS" id="NMe-eO-VsB"/>
+                        <outlet property="matriculaTextField" destination="FNe-IZ-Dxx" id="Mt5-fj-eXc"/>
+                        <outlet property="monitorButton" destination="ufs-AL-bbJ" id="h72-jz-6L3"/>
+                        <outlet property="nomeTextField" destination="Gbt-MX-8Ew" id="Uwz-y8-Iml"/>
+                        <outlet property="outputMessage" destination="Qby-fC-4GH" id="8Kf-TU-AOl"/>
+                        <outlet property="professorButton" destination="Zx9-QQ-zaA" id="fcR-rq-f1x"/>
+                        <outlet property="removeMatriculaTextField" destination="I6Q-MW-SkG" id="zZe-TN-0Am"/>
+                        <outlet property="salarioTextField" destination="b8j-7M-1MM" id="7jg-N2-W8O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
